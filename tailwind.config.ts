@@ -39,13 +39,13 @@ const config: Config = {
       },
       fontFamily: {
         sans:    ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-syne)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'system-ui', 'sans-serif'],
       },
       fontSize: {
-        'display-xl': ['clamp(44px,6vw,80px)',  { lineHeight: '1.05', letterSpacing: '-0.05em' }],
-        'display-lg': ['clamp(32px,4vw,52px)',  { lineHeight: '1.1',  letterSpacing: '-0.04em' }],
-        'display-md': ['clamp(24px,3vw,38px)',  { lineHeight: '1.15', letterSpacing: '-0.035em' }],
-        'display-sm': ['clamp(20px,2.2vw,28px)',{ lineHeight: '1.2',  letterSpacing: '-0.02em' }],
+        'display-xl': ['clamp(48px,6.5vw,92px)', { lineHeight: '1.03', letterSpacing: '-0.04em' }],
+        'display-lg': ['clamp(36px,4.5vw,60px)', { lineHeight: '1.08', letterSpacing: '-0.035em' }],
+        'display-md': ['clamp(26px,3vw,40px)',   { lineHeight: '1.12', letterSpacing: '-0.03em' }],
+        'display-sm': ['clamp(20px,2.2vw,28px)', { lineHeight: '1.18', letterSpacing: '-0.02em' }],
       },
       borderRadius: {
         xs:   '6px',

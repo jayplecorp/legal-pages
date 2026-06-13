@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Syne } from 'next/font/google'
+import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -11,10 +11,10 @@ const inter = Inter({
   display: 'swap',
 })
 
-const syne = Syne({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  weight: ['700', '800'],
-  variable: '--font-syne',
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-display',
   display: 'swap',
 })
 
@@ -78,7 +78,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${syne.variable}`}>
+    <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
       <head>
         <script
           type="application/ld+json"
