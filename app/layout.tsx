@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Syne } from 'next/font/google'
+import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -11,10 +11,10 @@ const inter = Inter({
   display: 'swap',
 })
 
-const syne = Syne({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  weight: ['700', '800'],
-  variable: '--font-syne',
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-display',
   display: 'swap',
 })
 
@@ -67,6 +67,7 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   other: {
     'theme-color': '#07132A',
+    'apple-itunes-app': 'app-id=6779542812',
   },
 }
 
@@ -78,7 +79,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${syne.variable}`}>
+    <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
       <head>
         <script
           type="application/ld+json"
@@ -92,8 +93,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   url: 'https://jayple.in',
                   logo: 'https://jayple.in/logo.png',
                   sameAs: [
-                    'https://instagram.com/jayple',
-                    'https://linkedin.com/company/jayple',
+                    'https://www.instagram.com/jayple.in/',
                   ],
                 },
                 {
@@ -112,6 +112,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   operatingSystem: 'ANDROID, IOS',
                   applicationCategory: 'LifestyleApplication',
                   offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
+                  installUrl: 'https://apps.apple.com/in/app/jayple/id6779542812',
+                  downloadUrl: [
+                    'https://apps.apple.com/in/app/jayple/id6779542812',
+                    'https://play.google.com/store/apps/details?id=com.jayple.app',
+                  ],
                 },
               ],
             }),
@@ -119,6 +124,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[99999] focus:px-5 focus:py-3 focus:bg-lime focus:text-navy focus:font-bold focus:rounded-md focus:shadow-lg focus:text-sm"
+        >
+          Skip to main content
+        </a>
         <ScrollProgress />
         <Navbar />
         <main id="main-content">{children}</main>
