@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform, useInView, useMotionValue, useSpring, 
 import { EASE, SPRING } from '@/lib/tokens'
 import { onAppCTAClick } from '@/hooks/useDeeplink'
 import Link from 'next/link'
+import Image from 'next/image'
 
 /* ── Animated counter ─────────────────────────────── */
 function Counter({ to, suffix = '' }: { to: number; suffix?: string }) {
@@ -48,12 +49,14 @@ function HeroImage({
       {!loaded && (
         <div className="absolute inset-0 bg-navy-mid animate-pulse" />
       )}
-      <img
+      <Image
         src={src}
         alt={alt}
-        loading={priority ? 'eager' : 'lazy'}
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority={priority}
         onLoad={() => setLoaded(true)}
-        className={`w-full h-full object-cover transition-opacity duration-700 ${
+        className={`object-cover transition-opacity duration-700 ${
           loaded ? 'opacity-100' : 'opacity-0'
         }`}
       />
