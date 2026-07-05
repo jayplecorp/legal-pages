@@ -16,7 +16,7 @@ export default function StandalonePrivacyPolicyPage() {
       <header className="border-b border-surface-border bg-surface-off">
         <div className="max-w-3xl mx-auto px-6 py-6 flex items-center gap-3">
           <Image
-            src="/logo.png"
+            src="/legal-pages/logo.png"
             alt="Jayple"
             width={36}
             height={36}

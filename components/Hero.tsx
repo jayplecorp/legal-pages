@@ -207,7 +207,7 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.15, ease: EASE }}
                 >
                   <HeroImage
-                    src="/images/hero-salon-main.png"
+                    src="/legal-pages/images/hero-salon-main.png"
                     alt="Premium luxury salon interior with professional styling"
                     className="aspect-[3/4] lg:aspect-[4/5]"
                     priority
@@ -242,7 +242,7 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.3, ease: EASE }}
                 >
                   <HeroImage
-                    src="/images/hero-salon-styling.png"
+                    src="/legal-pages/images/hero-salon-styling.png"
                     alt="Professional hair styling close-up"
                     className="aspect-square"
                   />
@@ -257,7 +257,7 @@ export default function Hero() {
                   transition={{ duration: 0.8, delay: 0.45, ease: EASE }}
                 >
                   <HeroImage
-                    src="/images/hero-salon-app.png"
+                    src="/legal-pages/images/hero-salon-app.png"
                     alt="Happy customer booking salon appointment on phone"
                     className="aspect-square"
                   />

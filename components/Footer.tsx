@@ -37,7 +37,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2.5 mb-5" aria-label="Jayple Home">
-              <Image src="/logo.png" alt="Jayple Logo" width={32} height={32} className="rounded-lg" />
+              <Image src="/legal-pages/logo.png" alt="Jayple Logo" width={32} height={32} className="rounded-lg" />
               <span className="font-display font-extrabold text-lg text-white">
                 Jay<span className="text-lime">p</span>le
               </span>

@@ -50,7 +50,7 @@ export default function Navbar() {
         <div className="container-max flex items-center justify-between gap-6">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Jayple Home">
-            <Image src="/logo.png" alt="Jayple Logo" width={36} height={36} className="rounded-lg" priority />
+            <Image src="/legal-pages/logo.png" alt="Jayple Logo" width={36} height={36} className="rounded-lg" priority />
             <span className="font-display font-extrabold text-xl text-white tracking-tight">
               Jay<span className="text-lime">p</span>le
             </span>
